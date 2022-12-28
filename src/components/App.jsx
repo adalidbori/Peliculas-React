@@ -2,7 +2,6 @@ import { GeneralGrid } from "./GeneralGrid";
 import styles from "./App.module.css";
 import {
     BrowserRouter as Router,
-    Switch,
     Route,
     Link,
     Routes
@@ -19,7 +18,7 @@ export function App() {
             <main>
                 <Routes>
                     <Route path="/movie" element="Movie" />
-                    <Route path="/" element="Home" />
+                    <Route path="/" element={<GeneralGrid />} />
                 </Routes>
             </main>
         </Router>
