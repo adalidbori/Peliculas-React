@@ -1,5 +1,5 @@
 import { MovieGrid } from "./MovieGrid";
-import movies from "./utils/movies.json"
+import movies from "../utils/movies.json"
 import styles from "./GeneralGrid.module.css";
 export function GeneralGrid(){
     return (
