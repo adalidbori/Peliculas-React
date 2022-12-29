@@ -1,5 +1,4 @@
 import { MovieGrid } from "./MovieGrid";
-import movies from "../utils/movies.json"
 import styles from "./GeneralGrid.module.css";
 import { useEffect, useState } from "react";
 export function GeneralGrid() {
