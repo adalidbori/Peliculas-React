@@ -5,7 +5,7 @@ export function GeneralGrid(){
     return (
         <div>
             <ul className={styles.moviesGrid}>
-                {movies.map((movie) => (
+                {movies.map(movie => (
                    <MovieGrid key={movie.id} movie={movie} />
                 ))}
             </ul>

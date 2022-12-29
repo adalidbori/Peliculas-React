@@ -1,4 +1,4 @@
-import { GeneralGrid } from "./GeneralGrid";
+
 import styles from "./App.module.css";
 import {
     BrowserRouter as Router,
@@ -6,19 +6,21 @@ import {
     Link,
     Routes
 } from "react-router-dom";
+import { MovieDetails } from "../Pages/MovieDetails";
+import { LandingPage } from "../Pages/LandingPage";
 
 export function App() {
     return (
         <Router>
             <header>
-                <h1 className={styles.title}>Movies</h1>
-                <Link to="/movie">Movie</Link>
-                <Link to="/">Home</Link>
+                
+                <Link to="/">{<h1 className={styles.title}>Movies</h1>}</Link>
+              
             </header>
             <main>
                 <Routes>
-                    <Route path="/movie" element="Movie" />
-                    <Route path="/" element={<GeneralGrid />} />
+                    <Route path="/movies/:movieId" element={<MovieDetails />} />
+                    <Route path="/" element={<LandingPage />} />
                 </Routes>
             </main>
         </Router>
